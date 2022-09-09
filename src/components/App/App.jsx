@@ -1,21 +1,24 @@
 import "./App.css";
+import React from "react";
 import Home from "../Home/Home";
 import Projects from "../Projects/Projects";
-import { HashRouter as Router, Route, Routes } from "react-router-dom";
+import { BrowserRouter as Router, Link, Route, Routes, Switch } from "react-router-dom";
+
 
 function App() {
   return (
-    <div className="App">
     <Router>
-       <Routes>
-      
-        <Route exact path="projects">
-          <Projects />
-        </Route>
-      
-      </Routes>
+    
+   
+       
+      <Routes>
+        <Route exact path='/' element={<Home/>}/>
+      <Route exact path='/projects' element={<Projects/>}/>
+        </Routes>
+     
+   
+   
     </Router>
-    </div>
     
   );
 }

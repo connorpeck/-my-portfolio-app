@@ -9,11 +9,11 @@ import {
 import { useNavigate } from "react-router-dom";
 
 function Home() {
-  const history = useNavigate();
+  const navigate = useNavigate();
 
   const showProjects = () => {
     console.log("in showProjects");
-    history.push("/projects");
+    navigate("/projects");
   };
 
   return (
