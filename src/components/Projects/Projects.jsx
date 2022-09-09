@@ -11,9 +11,9 @@ function Projects() {
   };
   return (
     <div className='myCard'>
-        <Card sx={{ maxWidth: 345 }}>
+        <Card sx={{ maxWidth: 345, minWidth:345, minHeight:345}}>
         <Typography sx={{mt:3}}className="myCard" gutterBottom variant="h5" component="div">
-          Links to my Projects
+          Projects
         </Typography>
       <CardActions>
 <ul>
@@ -34,7 +34,7 @@ function Projects() {
         target="_blank"
         rel="noopener noreferrer"
       >
-        Tennis Court Review App 
+        Custom Tennis Court Map & Review App 
       </Button>
       </li>
       </ul>

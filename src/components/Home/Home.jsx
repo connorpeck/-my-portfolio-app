@@ -18,14 +18,16 @@ function Home() {
 
   return (
     <div className="myCard">
-      <Card sx={{ maxWidth: 345 }}>
+      <Card sx={{ maxWidth: 345, minWidth:345}}>
         <CardMedia component="img" alt="myself" image="./myself.jpg" />
         <CardContent>
+            <div className="myCard">
           <Typography gutterBottom variant="h5" component="div">
             Connor Peck 
             <br />
             Full-Stack Developer
           </Typography>
+          </div>
         </CardContent>
       
       </Card>
