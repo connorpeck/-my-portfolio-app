@@ -1,5 +1,6 @@
-import { Button } from "@mui/material";
+import { Button, CardActions, Typography } from "@mui/material";
 import { useNavigate } from "react-router-dom";
+import {Card} from "@mui/material"
 
 function Projects() {
   const navigate = useNavigate();
@@ -9,16 +10,38 @@ function Projects() {
     navigate("/");
   };
   return (
-    <div>
-      This is a List of my Projects
+    <div className='myCard'>
+        <Card sx={{ maxWidth: 345 }}>
+        <Typography sx={{mt:3}}className="myCard" gutterBottom variant="h5" component="div">
+          Links to my Projects
+        </Typography>
+      <CardActions>
+<ul>
+          <li>
       <Button
-      variant="contained"
+      
         href="https://redwinglurecompany.herokuapp.com/#/home"
         target="_blank"
         rel="noopener noreferrer"
       >
         Custom Fishing Lure Designer
       </Button>
+      </li>
+      <li>
+      <Button
+      
+        href="https://tennis-courts-app.herokuapp.com/#/registration"
+        target="_blank"
+        rel="noopener noreferrer"
+      >
+        Tennis Court Review App 
+      </Button>
+      </li>
+      </ul>
+      </CardActions>
+      
+     
+      </Card>
       <Button variant="contained" onClick={goBack}>
         Back
       </Button>

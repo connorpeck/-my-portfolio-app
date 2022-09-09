@@ -1,3 +1,8 @@
+@font-face {
+  font-family: "Delmon Delicate";
+  src: url("../../../public/fonts/Delmon Delicate.ttf") format("truetype");
+}
+
 .App {
   text-align: center;
 }
@@ -22,6 +27,9 @@
   justify-content: center;
   font-size: calc(10px + 2vmin);
   color: white;
+}
+body {
+  background-color: #828E82;
 }
 
 .App-link {

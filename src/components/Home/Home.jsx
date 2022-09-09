@@ -22,13 +22,16 @@ function Home() {
         <CardMedia component="img" alt="myself" image="./myself.jpg" />
         <CardContent>
           <Typography gutterBottom variant="h5" component="div">
-            Connor Peck - Full-Stack Developer
+            Connor Peck 
+            <br />
+            Full-Stack Developer
           </Typography>
         </CardContent>
-        <Button variant="contained" onClick={showProjects}>
+      
+      </Card>
+      <Button variant="contained" className="myCard" onClick={showProjects}>
           View My Projects
         </Button>
-      </Card>
     </div>
   );
 }
