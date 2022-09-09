@@ -1,16 +1,22 @@
-
-import './App.css';
-import Home from '../Home/Home';
+import "./App.css";
+import Home from "../Home/Home";
+import Projects from "../Projects/Projects";
+import { HashRouter as Router, Route, Routes } from "react-router-dom";
 
 function App() {
   return (
     <div className="App">
- 
-       
-         <Home/>
-        
-        
+    <Router>
+       <Routes>
+      
+        <Route exact path="projects">
+          <Projects />
+        </Route>
+      
+      </Routes>
+    </Router>
     </div>
+    
   );
 }
 
