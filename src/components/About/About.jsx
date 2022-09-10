@@ -2,7 +2,7 @@ import { Button, CardActions, Typography } from "@mui/material";
 import { useNavigate } from "react-router-dom";
 import { Card } from "@mui/material";
 
-function Projects() {
+function About() {
   const navigate = useNavigate();
 
   const goBack = () => {
@@ -19,7 +19,7 @@ function Projects() {
           variant="h5"
           component="div"
         >
-          Projects
+          About
         </Typography>
         <CardActions>
           <ul>
@@ -29,7 +29,7 @@ function Projects() {
                 target="_blank"
                 rel="noopener noreferrer"
               >
-                Custom Fishing Lure Designer
+               This is my ABOUT
               </Button>
             </li>
             <li>
@@ -38,7 +38,7 @@ function Projects() {
                 target="_blank"
                 rel="noopener noreferrer"
               >
-                 Tennis Court Map & Review App
+             MYABOUT PAGE
               </Button>
             </li>
           </ul>
@@ -51,4 +51,4 @@ function Projects() {
   );
 }
 
-export default Projects;
+export default About;
