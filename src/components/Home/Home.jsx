@@ -25,12 +25,7 @@ function Home() {
 
   return (
     <div className="myCard">
-      <Button variant="contained" className="myCard" onClick={showProjects}>
-        Contact Me
-      </Button>
-      <Button variant="contained" className="myCard" onClick={showProjects}>
-        About Me
-      </Button>
+
       {projects ? (
         <Card sx={{ maxWidth: 345, minWidth: 345 }}>
           <CardMedia component="img" alt="myself" image="./myself.jpg" />
@@ -50,12 +45,14 @@ function Home() {
           <Projects />
         </Card>
       )}
-      <Button variant="contained" className="myCard" onClick={showProjects}>
+      {projects ? (     <Button variant="contained" className="myCard" onClick={showProjects}>
         View My Projects
-      </Button>
-      <Button variant="contained" className="myCard" onClick={showProjects}>
-        About Me
-      </Button>
+      </Button>) :
+      (     <Button variant="contained" className="myCard" onClick={showProjects}>
+      Back
+    </Button>)}
+ 
+  
     </div>
   );
 }
