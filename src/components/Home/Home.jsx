@@ -10,6 +10,7 @@ import {
 } from "@mui/material";
 import { useNavigate } from "react-router-dom";
 import Projects from "../Projects/Projects";
+import Nav from "../Nav/Nav";
 
 function Home() {
   const navigate = useNavigate();
@@ -24,8 +25,12 @@ function Home() {
 
 
   return (
+    <div className='navBar'>
+      <Nav/>
+      <br/>
     <div className="myCard">
 
+  
       {projects ? (
         <Card sx={{ maxWidth: 345, minWidth: 345 }}>
           <CardMedia component="img" alt="myself" image="./myself.jpg" />
@@ -53,6 +58,7 @@ function Home() {
     </Button>)}
  
   
+    </div>
     </div>
   );
 }
