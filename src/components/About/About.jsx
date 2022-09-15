@@ -1,6 +1,6 @@
 
 import { useNavigate } from "react-router-dom";
-
+import Nav from "../Nav/Nav";
 import {
   Button,
   Card,
@@ -18,8 +18,12 @@ function About() {
     navigate("/");
   };
   return (
+    <div className="navBar">
+
+    <Nav/>
+    <br />
     <div className="myCard">
-     <Card sx={{ maxWidth: 345, minWidth: 345 }}>
+     <Card sx={{ maxWidth: 345, minWidth: 345, p:5}}>
      Dear hiring manager, 
 
 Please consider my resume and cover letter for the Full-Stack React Developer position. 
@@ -35,8 +39,9 @@ Thank you for your time,
 Connor Peck
 
         </Card>
-        <Button variant="contained" onClick={goBack}>Back</Button>
+        <Button variant="contained"  onClick={goBack}>Back</Button>
       
+    </div>
     </div>
   );
 }
