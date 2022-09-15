@@ -15,7 +15,7 @@ import Nav from "../Nav/Nav";
 function Home() {
   const navigate = useNavigate();
 
-  const [projects, setProjects] = useState(false);
+  const [projects, setProjects] = useState(true);
   const [about, setAbout] = useState(false);
 
   const showProjects = () => {

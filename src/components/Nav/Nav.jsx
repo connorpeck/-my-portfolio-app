@@ -6,11 +6,19 @@ import Typography from '@mui/material/Typography';
 import Button from '@mui/material/Button';
 import IconButton from '@mui/material/IconButton';
 import MenuIcon from '@mui/icons-material/Menu';
+import { useNavigate } from "react-router-dom";
 
 export default function Nav() {
+    const navigate = useNavigate();
+
+
+    const toAbout = () => {
+        console.log('in toAbout');
+        navigate('/about')
+    }
   return (
     <Box sx={{ flexGrow: 1 }}>
-      <AppBar position="static">
+      <AppBar sx={{background:"##2E4052"}} position="static">
         <Toolbar>
           <IconButton
             size="large"
@@ -24,7 +32,7 @@ export default function Nav() {
           <Typography variant="h6" component="div" sx={{ flexGrow: 1 }}>
             Connor Peck
           </Typography>
-          <Button color="inherit">About Me</Button>
+          <Button color="inherit" onClick={toAbout}>About Me</Button>
         </Toolbar>
       </AppBar>
     </Box>
